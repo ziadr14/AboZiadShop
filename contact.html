@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #scrool-icon {
+            height: 40px;
+            width: 40px;
+            border: none;
+            background-color: orange;
+            border-radius: 50%;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            display: none;
+        }
+        #scrool-icon:hover {
+            height: 60px;
+            width: 60px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="logo"><h2><a href="index.html"> <span class="span1">ABO</span>  ZIAD</a></h2></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><img calss="search" src="images/search-icon.png" ></li>
+                </ul>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="scroll">
+        <button id="scrool-icon">^</button>
+    </div>
+    <div class="contact">
+        <div class="con"><h2>contact <span>us</span> </h2></div>
+        <div class="inputs">
+            <input type="text" class="email-bt" placeholder="Your Name" name="Name">
+            <input type="text" class="email-bt" placeholder="Email" name="Name">
+            <input type="text" class="email-bt" placeholder="Phone Number" name="Name">
+            <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea></div>
+            <div class="send_bt"> <button class="btn"><a calss="send" href="#">Send</a></button></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy;  Abo Ziad </p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
